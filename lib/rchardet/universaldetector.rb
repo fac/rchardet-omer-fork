@@ -118,7 +118,7 @@ module CharDet
       	end
       elsif @_mInputState == EHighbyte
       	if not @_mCharSetProbers or @_mCharSetProbers.empty?
-      	  @_mCharSetProbers = [MBCSGroupProber.new(), SBCSGroupProber.new(), Latin1Prober.new()]
+          @_mCharSetProbers = [UTF8Prober.new(), Latin1Prober.new()]
       	end
       	for prober in @_mCharSetProbers
       	  if prober.feed(aBuf) == EFoundIt
