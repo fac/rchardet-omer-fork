@@ -12,6 +12,8 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files  = ['README', 'COPYING']
   s.rubyforge_project = 'rchardet'
 
+  s.metadata['allowed_push_host'] = 'https://rubygems.pkg.github.com/fac'
+
   s.add_development_dependency "bundler", "~> 2.0"
   s.add_development_dependency "rake", "~> 12.0"
   s.add_development_dependency "rspec", "~> 3.0"
